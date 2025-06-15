@@ -1,0 +1,428 @@
+:root {
+    --primary-color: #2C3B2E; /*rgba(47, 72, 30, 1);*/
+    --secondary-color: rgba(171, 225, 136, 1);
+    --cards-color: rgba(255, 255, 255, 0.08); /* rgba(143, 160, 89, 0.5);*/
+    --text-color: rgba(250, 250, 250, 1);
+    --menu-text-color: rgba(250, 250, 250, 0.7);
+    --menu-pill-color: rgba(250, 250, 250, 0.5);
+    --btn-color: rgba(250, 250, 250, 0.4);
+    --card-cards-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Main Section */
+html, body,  section {
+    background-color: var(--primary-color) !important;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--text-color);
+  padding-top: 80px; /* adjust based on your navbar's real height */
+}
+
+
+.card {
+    background-color: var(--cards-color);
+}
+
+.btn.btn-primary {
+  color: var(--secondary-color) !important;
+  text-decoration: none;
+  border-width: 0.5px;
+  border-color: var(--menu-text-color);
+  background-color: var(--btn-color);
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+}
+
+.btn.btn-secondary {
+  color: var(--menu-text-color) !important;
+  text-decoration: none;
+  border-width: 0.5px;
+  border-color: var(--color-secondary);
+  background-color: var(--cards-color);
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+}
+
+
+/* Navbar */
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.navbar-wrapper > .container {
+  border-radius: 8px; /* Optional, if you want the same rounded edges */
+}
+
+
+.navbar-dark {
+  background: var(--cards-color) !important;
+  border-radius: 8px;
+}
+
+.navbar-brand {
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px !important;
+}
+
+.navbar a {
+      color: var(--menu-text-color);
+      text-transform: uppercase;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+}
+
+
+
+.nav-pills .nav-link {
+  padding: 5px 20px !important; /* Set fixed padding */
+  border-radius: 15px; /* Set fixed border-radius */
+  transition: background-color 0.3s ease; /* Smooth hover */
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--menu-pill-color);
+  color: var(--primary-color); /* Optional: for contrast */
+}
+
+.nav-pills .nav-link:hover {
+  background: radial-gradient(
+  circle at center,
+  rgba(255, 255, 255, 0.3) 0%,
+  rgba(255, 255, 255, 0.09) 90%
+);
+}
+
+
+.overlay-navbar {
+  background-color: rgba(44, 59, 46, 0.7); /* Charcoal olive com transparência */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1050; 
+}
+
+
+
+
+/*Apply styles only for collapsed nav (less than lg)  */
+@media (max-width: 991.98px) {
+  .navbar-collapsed-list {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; /* Align to the left */
+    padding-left: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .navbar-collapsed-list .nav-link {
+    padding: 5px 15px;
+    width: 100% !important;
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* keep toggle to the right */
+  }
+
+  .lang {
+    padding-left: 3px;
+}
+}
+
+/* Cor de fundo quando o switch está ativo */
+.form-check-input:checked {
+  background-color: var(--secondary-color); /* ou uma cor como #28a745 */
+  border-color: var(--secondary-color);
+}
+
+/* Cor do botão (o círculo) */
+.form-check-input {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+/* Mudar o botão quando estiver ativo */
+.form-check-input:checked::before {
+  background-color: #fff; /* cor do círculo */
+}
+
+.lang {
+  font-size: 12px;
+  color: var(--menu-text-color);
+}
+/* Hero section */
+
+.profile-pic {
+    border-radius: 8px;
+}
+
+.card-title-h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize
+}
+
+.card-text-body {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+  color: var(--menu-text-color);
+}
+
+
+/* expertise*/
+
+.card .card {
+  color: var(--menu-text-color) !important;
+  border-width: 0.2px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.card-text-highlight {
+  font-size: 17px;
+}
+
+.keep-aspect {
+  height: 90px;              /* Define a altura desejada */
+  width: auto;                /* Largura automática para manter a proporção */
+  object-fit: contain;        /* Ou 'cover', dependendo do efeito desejado */
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
+/* Skills */
+
+
+.scrolling-wrapper {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  
+  /* fade effect at edges */
+  -webkit-mask-image: linear-gradient(to right, 
+    transparent 0%, 
+    black 10%, 
+    black 90%, 
+    transparent 100%);
+  mask-image: linear-gradient(to right, 
+    transparent 0%, 
+    black 10%, 
+    black 90%, 
+    transparent 100%);
+}
+
+.scrolling-content {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.skill {
+  padding: 0.5rem 1rem;
+  font-size: 22px;
+  white-space: nowrap;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+/* Corrige a classe de cor secundária */
+.skill.skill-color {
+  color: var(--secondary-color);
+}
+
+/* Separador ∘ com 4rem, centralizado verticalmente */
+.skill-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.skill-circle::before {
+  font-size: 1rem;
+  color: var(--menu-text-color);
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  transform: translateY(1rem);
+}
+
+/* projects */
+.uniform-image-big {
+  width: 100%;         /* desired width */
+  height: 300px;        /* desired height */
+  object-fit: cover;    /* crop to fill box */
+  object-position: center; /* center the image */
+  border-radius: 8px;   /* optional rounding */
+}
+
+.uniform-image-small {
+  width: 100%;         /* desired width */
+  height: 200px;        /* desired height */
+  object-fit: cover;    /* crop to fill box */
+  object-position: center; /* center the image */
+  border-radius: 8px;   /* optional rounding */
+}
+
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.custom-left {
+  flex: 0 0 85%;
+}
+
+.custom-right {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+/* Arrow styling */
+.arrow-link {
+  color: var(--menu-text-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.arrow-link:hover {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+}
+
+
+/* KPI */
+
+
+.kpi-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  flex-shrink: 0;
+}
+
+.kpi-title {
+  font-size: clamp(1rem, 2vw, 1.2rem); /* responsivo */
+}
+
+.kpi-text {
+  font-size: clamp(0.8rem, 1.8vw, 1rem); /* responsivo */
+  color: var(--secondary-color);
+}
+
+.kpi-value {
+  font-size: clamp(1.5rem, 3vw, 2rem); /* valor dentro do círculo */
+  font-weight: bold;
+  color: var(--primary-color); /* ou qualquer cor de destaque */
+}
+
+
+.kpi-arrow {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.kpi-arrow:hover {
+  transform: scale(1.1);
+}
+
+#kpi-list {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.kpi-item {
+  flex: 0 0 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Let's talk */
+
+.contact-me {
+  color: var(--secondary-color) !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* social */
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  justify-content: start;
+  align-items: center;
+}
+
+.social-link {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
