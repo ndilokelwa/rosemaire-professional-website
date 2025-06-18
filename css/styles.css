@@ -256,12 +256,10 @@ body {
   align-items: center;
 }
 
-/* Corrige a classe de cor secundária */
 .skill.skill-color {
   color: var(--secondary-color);
 }
 
-/* Separador ∘ com 4rem, centralizado verticalmente */
 .skill-circle {
   display: flex;
   align-items: center;
@@ -389,6 +387,20 @@ body {
   text-transform: uppercase;
   font-size: 13px;
 }
+
+/* Arrow styling */
+.arrow-small {
+  color: var(--menu-text-color);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.arrow-small:hover {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+}
+
 
 /* social */
 

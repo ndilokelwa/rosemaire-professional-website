@@ -1,517 +1,508 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Rosemaire Luis</title>
-    </head>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+      <title>Rosemaire Luis</title>
+  </head>
 
-    <body>
+  <body>
 
-        
-      <header class="navbar-wrapper fixed-top">
-        <div class="container my-4">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 overlay-navbar px-4 py-2 transition-navbar" id="mainNavbar">
-            <a class="navbar-brand" href="index.html">
-              <img src="imgs/logo.png" width="52px"><span>&nbsp; Rosemaire</span>
-            </a>
-            
+    <!-- Header: navBar -->
+    <header class="navbar-wrapper fixed-top">
+      <div class="container my-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 overlay-navbar px-4 py-2 transition-navbar" id="mainNavbar">
+          <a class="navbar-brand" href="index.html">
+            <img src="imgs/logo.png" width="52px" alt="O meu logo"><span>&nbsp; Rosemaire</span>
+          </a>
+          <!-- Toggler button for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- NavBar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-pills align-items-center justify-content-between mx-auto navbar-collapsed-list ms-auto">
+              <li class="nav-item mx-1">
+                <a class="nav-link lang-pt active" href="index.html">Início</a>
+                <a class="nav-link lang-en d-none active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link lang-pt" href="about.html">Sobre Mim</a>
+                <a class="nav-link lang-en d-none" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link lang-pt" href="services.html">O que Faço</a>
+                <a class="nav-link lang-en d-none" href="services.html">My Work</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link lang-pt" href="blog.html">Blog</a>
+                <a class="nav-link lang-en d-none" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link lang-pt" href="contact.html">Contacto</a>
+                <a class="nav-link lang-en d-none" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Language switch OUTSIDE the collapsible menu -->
+          <div class="form-check form-switch ms-auto d-lg-block d-flex align-items-center">
+            <input class="form-check-input" type="checkbox" id="languageSwitch">
+            <label class="form-check-label text-white" for="languageSwitch"><span class="lang">EN</span></label>
+          </div>
+        </nav> 
+      </div>
+    </header> 
 
-            <!-- Toggler button for mobile -->
-             <!-- Toggler button for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav nav-pills align-items-center justify-content-between mx-auto navbar-collapsed-list ms-auto">
-                <li class="nav-item mx-1">
-                  <a class="nav-link lang-pt active" href="index.html">Início</a>
-                  <a class="nav-link lang-en d-none active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a class="nav-link lang-pt" href="about.html">Sobre Mim</a>
-                  <a class="nav-link lang-en d-none" href="about.html">About</a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a class="nav-link lang-pt" href="services.html">O que Faço</a>
-                  <a class="nav-link lang-en d-none" href="services.html">My Work</a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a class="nav-link lang-pt" href="blog.html">Blog</a>
-                  <a class="nav-link lang-en d-none" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a class="nav-link lang-pt" href="contact.html">Contacto</a>
-                  <a class="nav-link lang-en d-none" href="contact.html">Contact</a>
-                </li>
-              </ul>
-              <!-- Switch de idioma -->
-              <!-- <div class="form-check form-switch ms-auto">
-                <input class="form-check-input" type="checkbox" id="languageSwitch">
-                <label class="form-check-label" for="languageSwitch">EN</label>
-              </div> -->
-              <!-- Language switch OUTSIDE of the collapsible menu -->
-              <!-- <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="languageSwitch">
-                <label class="form-check-label" for="languageSwitch">EN</label>
-              </div> -->
+    <!-- Section: Hero and Expertise-->
+    <section class="container my-5">
+      <div class="row g-4">
+        <!-- Left card -->
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 h-100 shadow d-flex flex-column">
+            <div class="card-body">
+              <img class="profile-pic img-fluid" src="imgs/photo.png" alt="A minha fotografia">
+              <p class="card-title-h1">Rosemaire Luis</p>
+              <p class="card-text-body lang-pt">Engenheira do Ambiente e Consultora em Sustentabilidade com mais de 20 anos de experiência internacional a promover soluções estratégicas para o desenvolvimento sustentável. Especializada em impacto ambiental e social, alia rigor técnico à visão humana para transformar desafios em oportunidades sustentáveis.</p>
+              <p class="card-text-body lang-en d-none">Environmental Engineer and Sustainability Consultant with over 20 years of international experience promoting strategic solutions for sustainable development. Specialized in environmental and social impact, combining technical rigor with a human-centered vision to turn challenges into sustainable opportunities.</p>
             </div>
-            <!-- Language switch OUTSIDE the collapsible menu -->
-            <div class="form-check form-switch ms-auto d-lg-block d-flex align-items-center">
-              <input class="form-check-input" type="checkbox" id="languageSwitch">
-              <label class="form-check-label text-white" for="languageSwitch"><span class="lang">EN</span></label>
+            <div class="d-flex flex-column flex-sm-row justify-content-between gap-3">
+              <a href="#" class="btn btn-primary text-secondary flex-fill text-center">
+                <i class="bi bi-telephone"></i><span class="lang-pt">&nbsp; Agendar Reunião</span><span class="lang-en d-none">&nbsp; Book a Call</span>
+              </a>
+              <a href="#" class="btn btn-secondary flex-fill text-center">
+                <i class="bi bi-download"></i><span class="lang-pt">&nbsp; Curriculo</span><span class="lang-en d-none">&nbsp; CV</span>
+              </a>
             </div>
-          </nav> 
+          </div>
         </div>
-      </header> 
 
-      <section class="container my-5">
-        <div class="row g-4">
-          <!-- Left card -->
-          <div class="col-12 col-lg-4">
-            <div class="card p-4 h-100 shadow d-flex flex-column">
-              <div class="card-body">
-                <img class="profile-pic" src="imgs/photo.png" width="100%" alt="A minha fotografia">
-                <p class="card-title-h1">Rosemaire Luis</p>
-                <p class="card-text-body lang-pt">Engenheira do Ambiente e Consultora em Sustentabilidade com mais de 20 anos de experiência internacional a promover soluções estratégicas para o desenvolvimento sustentável. Especializada em impacto ambiental e social, alia rigor técnico à visão humana para transformar desafios em oportunidades sustentáveis.</p>
-                <p class="card-text-body lang-en d-none">Environmental Engineer and Sustainability Consultant with over 20 years of international experience promoting strategic solutions for sustainable development. Specialized in environmental and social impact, combining technical rigor with a human-centered vision to turn challenges into sustainable opportunities.</p>
-              </div>
-              <div class="d-flex flex-column flex-sm-row justify-content-between gap-3">
-                <a href="#" class="btn btn-primary text-secondary flex-fill text-center">
-                  <i class="bi bi-telephone"></i><span class="lang-pt">&nbsp; Agendar Reunião</span><span class="lang-en d-none">&nbsp; Book a Call</span>
-                </a>
-                <a href="#" class="btn btn-secondary flex-fill text-center">
-                  <i class="bi bi-download"></i><span class="lang-pt">&nbsp; Curriculo</span><span class="lang-en d-none">&nbsp; CV</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right stacked cards -->
-          <div class="col-12 col-lg-8">
-            <div class="card p-4 shadow mb-4">
-              <h3 class="card-title-h1 lang-pt">As minhas áreas de especialização</h3>
-              <h3 class="card-title-h1 lang-en d-none">My Expertise areas</h3>
-              <div>
-                <div class="row g-4">
-                  <!-- Card 1 -->
-                  <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                    <div class="card p-4 shadow-sm h-100">
-                      <img src="imgs/aas6765256.png" alt="Person with a notepad, a magnifying glass, a computer, a tree, and a oild tank." class="img-fluid keep-aspect">
-                      <div class="mt-auto">
-                        <!-- Footer or button -->
-                        <p class="card-text-highlight lang-pt">Avaliação Ambiental e Social</p>
-                        <p class="card-text-highlight lang-en d-none">Environmental and Social Assessment</p>
-                      </div> 
-                    </div>
-                    
-              
+        <!-- Right stacked cards -->
+        <div class="col-12 col-lg-8">
+          <div class="card p-4 shadow mb-4">
+            <h3 class="card-title-h1 lang-pt">As minhas áreas de especialização</h3>
+            <h3 class="card-title-h1 lang-en d-none">My Expertise areas</h3>
+            <div>
+              <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                  <div class="card p-4 shadow-sm h-100">
+                    <img src="imgs/aas6765256.png" alt="Person with a notepad, a magnifying glass, a computer, a tree, and a oild tank." class="img-fluid keep-aspect">
+                    <div class="mt-auto">
+                      <!-- Footer or button -->
+                      <p class="card-text-highlight lang-pt">Avaliação Ambiental e Social</p>
+                      <p class="card-text-highlight lang-en d-none">Environmental and Social Assessment</p>
+                    </div> 
                   </div>
-
-                  <!-- Card 2 -->
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card p-4 shadow-sm h-100">
-                      <img src="imgs/sc5274719.png" alt="" class="img-fluid keep-aspect">
-                      <div class="mt-auto">
-                        <!-- Footer or button -->
-                        <p class="card-text-highlight lang-pt">Sustentabilidade Corporativa</p>
-                        <p class="card-text-highlight lang-en d-none">Corporate Sustainability</p>
-                      </div> 
-                      
-                    </div>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card p-4 shadow-sm h-100">
-                      <img src="imgs/gpd.png" alt="" class="img-fluid keep-aspect">
-                      <div class="mt-auto">
-                        <!-- Footer or button -->
-                        <p class="card-text-highlight lang-pt">Gestão de Projectos de Desenvolvimento</p>
-                        <p class="card-text-highlight lang-en d-none">Development Project Management</p>
-                      </div> 
-                      
-                    </div>
-                  </div>
-
-                  <!-- Card 4 -->
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card p-4 shadow-sm h-100">
-                      <img src="imgs/es.png" alt="" class="img-fluid keep-aspect">
-                      <div class="mt-auto">
-                        <!-- Footer or button -->
-                        <p class="card-text-highlight lang-pt">Engajamento de Stakeholders</p>
-                        <p class="card-text-highlight lang-en d-none">Stakeholder Engagement</p>
-                      </div> 
-                      
-                    </div>
-                  </div>
-
-                  <!-- Card 5 -->
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card p-4 shadow-sm h-100">
-                      <img src="imgs/pot26684.png" alt="" class="img-fluid keep-aspect">
-                      <div class="mt-auto">
-                        <!-- Footer or button -->
-                        <p class="card-text-highlight lang-pt">Planeamento e Ordenamento do Território</p>
-                        <p class="card-text-highlight lang-en d-none">Spatial Planning and Land Management</p>
-                      </div> 
-                      
-                    </div>
-                  </div>
-
-                  <!-- Card 6 -->
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card p-4 shadow-sm h-100">
-                      <img src="imgs/fs42822.png" alt="" class="img-fluid keep-aspect">
-                      <div class="mt-auto">
-                        <!-- Footer or button -->
-                        <p class="card-text-highlight lang-pt">Financiamento Sustentável</p>
-                        <p class="card-text-highlight lang-en d-none">Sustainable Finance</p>
-                      </div> 
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="card p-4 shadow">
-              <p class="card-text-body lang-pt">Como consultora ambiental, especializo-me em transformar desafios ambientais em soluções sustentáveis com impacto real. Acredito que o desenvolvimento responsável começa com diálogo aberto, respeito pelas comunidades e compromisso com o bem comum.</p>
-              <p class="card-text-body lang-en d-none">As an environmental consultant, I specialize in transforming environmental challenges into sustainable solutions with real impact. I believe that responsible development begins with open dialogue, respect for communities, and a commitment to the common good.</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-        <section class="container my-5">
-            <div class="row">
-              <div class="col-12">
-                <div class="card py-2 shadow">
-                  <div class="overflow-auto">
-                   <div class="scrolling-wrapper" id="scrollContainer">
-                    <div class="scrolling-content" id="scrollContent">
-                      <span class="skill lang-pt">Avaliação de Impacto Ambiental e Social (EIA/ESIA)</span>
-                      <span class="skill lang-en d-none">Environmental and Social Impact Assessment (EIA/ESIA)</span>
-                      <span><i class="bi bi-circle skill-circle"></i></span>
-                      <span class="skill skill-color lang-pt">Gestão de Projetos de Sustentabilidade</span>
-                      <span class="skill skill-color lang-en d-none">Sustainability Project Managemen</span>
-                      <span><i class="bi bi-circle skill-circle"></i></span>
-                      <span class="skill lang-pt">Planeamento e Ordenamento do Território</span>
-                      <span class="skill lang-en d-none">Territorial Planning and Land Use</span>
-                      <span><i class="bi bi-circle skill-circle"></i></span>
-                      <span class="skill skill-color lang-pt">Implementação de SGAS</span>
-                      <span class="skill skill-color lang-en d-none">ESMS Implementation</span>
-                      <span><i class="bi bi-circle skill-circle"></i></span>
-                      <span class="skill lang-pt">Engajamento de Stakeholders</span>
-                      <span class="skill lang-en d-none">Stakeholder Engagement</span>
-                      <span><i class="bi bi-circle skill-circle"></i></span>
-                      <span class="skill skill-color lang-pt">Análise de Risco Ambiental e Social</span>
-                      <span class="skill skill-color lang-en d-none">Environmental and Social Risk Analysis</span>
-                      <span><i class="bi bi-circle skill-circle"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <section class="container my-5">
-          <div class="row my-4">
-            <!-- Top row: 2 cards -->
-              <div class="col-12 col-md-6">
-                <div class="card p-4 shadow h-100">
-
-                  <div class="d-flex custom-row">
-                    <div class="custom-left">
-                      <h6 class="card-title lang-pt">Avaliação de Riscos em Direitos Humanos</h6>
-                      <h6 class="card-title lang-en d-none">Human Rights Risk Assessment</h6>
-                      <p class="card-text-body">XSML Capital</p>
-                    </div>
-                    <div class="custom-right">
-                      <a href="#" class="arrow-link">
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <img src="imgs/human.jpg" alt="" class="uniform-image-big">
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6">
-                <div class="card p-4 shadow h-100">
-                   <div class="d-flex custom-row">
-                    <div class="custom-left">
-                      <h6 class="card-title lang-pt">Avaliação Ambiental e Social</h6>
-                      <h6 class="card-title lang-en d-none">Environmental and Social Impact Assessment </h6>
-                      <p class="card-text-body lang-pt">Terminal da Pumangol</p>
-                      <p class="card-text-body lang-en d-none">Pumangol Fuel Terminal</p>
-                    </div>
-                    <div class="custom-right">
-                      <a href="#" class="arrow-link">
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                         </div>
-                  </div>
-                  <img src="imgs/porto.jpg" alt="" class="uniform-image-big">
-                </div>
-              </div>
-          </div>
-
-          <!-- Bottom row: 3 cards -->
-          <div class="row">
-              <div class="col-12 col-md-4">
-                <div class="card p-4 shadow h-100">
-                  <div class="d-flex custom-row">
-                    <div class="custom-left">
-                  <h6 class="card-title lang-pt">Projeto FSSP</h6>
-                  <h6 class="card-title lang-en d-none">PFisheries Sector Support Project (FSSP)</h6>
-                  <p class="card-text-body lang-pt">Apoio ao Setor das Pescas</p>
-                  <p class="card-text-body lang-en d-none">Support to the Fisheries Sector</p>
-                  </div>
-                    <div class="custom-right">
-                  <a href="#" class="arrow-link">
-                    <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                  </div>
-                  </div>
-                  <img src="imgs/pesca.jpg" alt="" class="uniform-image-small">
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="card p-4 shadow h-100">
-                  <div class="d-flex custom-row">
-                    <div class="custom-left">
-                  <h6 class="card-title lang-pt">Reducing Pollution Through Partnership</h6>
-                  <h6 class="card-title lang-en d-none">Reducing Pollution Through Partnership</h6>
-                  <p class="card-text-body">JNCC & Ecojango</p>
-                  </div>
-                    <div class="custom-right">
-                  <a href="#" class="arrow-link">
-                    <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                  </div>
-                  </div>
-                  <img src="imgs/partnership.jpg" alt="" class="uniform-image-small">
-                </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <div class="card p-4 shadow h-100">
-                <div class="d-flex custom-row">
-                    <div class="custom-left">
-                  <h6 class="card-title lang-pt">Plano de Gestão Ambiental e Social</h6>
-                  <h6 class="card-title lang-en d-none">Environmental and Social Management Plan</h6>
-                  <p class="card-text-body lang-pt">Terminal da Pumangol</p>
-                  <p class="card-text-body lng-en d-none">Pumangol Fuel Terminal</p>
-                  </div>
-                    <div class="custom-right">
-                  <a href="#" class="arrow-link">
-                    <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                  </div>
-                  </div>
-                  <img src="imgs/oil.jpg" alt="" class="uniform-image-small">
-                </div>
-              </div>
-          </div>
-
-        </section>
-
-        <footer class="container my-5">
-          <div class="row g-4">
-
-            <!-- Left card -->
-            <div class="col-12 col-lg-8">
-              <div class="card h-100 py-2">
-              <div class="overflow-hidden position-relative" style="width: 100%;">
-
-                  <div class="d-flex flex-nowrap" id="kpi-list">
                   
-                    <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+            
+                </div>
 
-                      <!-- Círculo com valor centrado -->
-                      <div class="kpi-circle d-flex align-items-center justify-content-center">
-                        <span class="kpi-value">+20</span>
-                      </div>
-
-                      <!-- Texto à direita -->
-                      <div>
-                        <span class="kpi-title lang-pt">Anos de experiência em projetos ambientais e sociais<br></span>
-                        <span class="kpi-title lang-en d-none">Years of experience in environmental and social projects<br></span>
-                        <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Experiência acumulada em contextos nacionais e internacionais.</span><span class="lang-en d-none">&nbsp;Cumulative experience in national and international contexts.</span></span>
-                      </div>
-
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+30</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Projetos de impacto sustentável avaliados ou coordenados<br></span>
-                          <span class="kpi-title lang-en d-none">Sustainable impact projects evaluated or coordinated<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;avaliações de impacto, planos de gestão e consultorias estratégicas.</span><span class="lang-en d-none">&nbsp;Impact assessments, management plans, and strategic consultancies.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+10</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Instituições internacionais parceiras<br></span>
-                          <span class="kpi-title lang-en d-none">International partner institutions<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;FAO, Banco Mundial, AfDB, IFC, JNCC, entre outras.</span><span class="lang-en d-none">&nbsp;FAO, World Bank, AfDB, IFC, JNCC, among others.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+10</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Sectores económicos abrangidos<br></span>
-                          <span class="kpi-title lang-en d-none">Covered economic sectors<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Agricultura, indústria, energia, água, pescas, banca, mineração, entre outros.</span><span class="lang-en d-none">&nbsp;Agriculture, industry, energy, water, fisheries, banking, mining, among others.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+500</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Stakeholders envolvidos em processos participativos<br></span>
-                          <span class="kpi-title lang-en d-none">Stakeholders engaged in participatory processes<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Sessões, workshops, missões de campo e articulação institucional.</span><span class="lang-en d-none">&nbsp;Sessions, workshops, field missions, and institutional coordination.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+12</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Anos a trabalhar com normas e salvaguardas internacionais (IFC, AfDB, ONU)<br></span>
-                          <span class="kpi-title lang-en d-none">Years working with international standards and safeguards (IFC, AfDB, UN)<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Rigor técnico alinhado com standards globais.</span><span class="lang-en d-none">&nbsp;Technical rigor aligned with global standards.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+15</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Estudos de impacto ambiental e social (EIA/ESIA) liderados ou revistos<br></span>
-                          <span class="kpi-title lang-en d-none">Environmental and social impact assessments (EIA/ESIA) led or reviewed<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Desde infraestruturas a planos territoriais.</span><span class="lang-en d-none">&nbsp;From infrastructure to territorial plans.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+10</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Estratégias de sustentabilidade elaboradas ou implementadas<br></span>
-                          <span class="kpi-title lang-en d-none">Sustainability strategies developed or implemented<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Em instituições financeiras, setor público e projetos financiados.</span><span class="lang-en d-none">&nbsp;In financial institutions, public sector, and funded projects.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value"><i class="bi bi-arrow-up-right"></i>57%</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">De redução de custos operacionais em projetos de planeamento urbano<br></span>
-                          <span class="kpi-title lang-en d-none">Reduction in operational costs in urban planning projects<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Otimização de circuitos de resíduos urbanos em Portugal.</span><span class="lang-en d-none">&nbsp;Optimization of urban waste routes in Portugal.</span></span>
-                        </div>
-                      </div>
-
-                      <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
-                        <div class="kpi-circle d-flex align-items-center justify-content-center">
-                          <span class="kpi-value">+5k</span>
-                        </div>
-                        <div>
-                          <span class="kpi-title lang-pt">Hectares de território analisado em planos ambientais<br></span>
-                          <span class="kpi-title lang-en d-none">Hectares of land analyzed in environmental plans<br></span>
-                          <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Incluindo parques naturais, zonas costeiras e áreas urbanas.</span><span class="lang-en d-none">&nbsp;Including natural parks, coastal zones, and urban areas.</span></span>
-                        </div>
-                      </div>
-
-                     
-                    </div>
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card p-4 shadow-sm h-100">
+                    <img src="imgs/sc5274719.png" alt="" class="img-fluid keep-aspect">
+                    <div class="mt-auto">
+                      <!-- Footer or button -->
+                      <p class="card-text-highlight lang-pt">Sustentabilidade Corporativa</p>
+                      <p class="card-text-highlight lang-en d-none">Corporate Sustainability</p>
+                    </div> 
+                    
                   </div>
-                   
-                <div class="px-4 d-flex justify-content-start align-items-center gap-2 mt-4">
-                  <button class="btn btn-outline-secondary rounded-circle kpi-arrow" id="scroll-arrow-left">
-                    <i class="bi bi-chevron-left"></i>
-                  </button>
-                  <button class="btn btn-outline-secondary rounded-circle kpi-arrow" id="scroll-arrow-right">
-                    <i class="bi bi-chevron-right"></i>
-                  </button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card p-4 shadow-sm h-100">
+                    <img src="imgs/gpd.png" alt="" class="img-fluid keep-aspect">
+                    <div class="mt-auto">
+                      <!-- Footer or button -->
+                      <p class="card-text-highlight lang-pt">Gestão de Projectos de Desenvolvimento</p>
+                      <p class="card-text-highlight lang-en d-none">Development Project Management</p>
+                    </div> 
+                    
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card p-4 shadow-sm h-100">
+                    <img src="imgs/es.png" alt="" class="img-fluid keep-aspect">
+                    <div class="mt-auto">
+                      <!-- Footer or button -->
+                      <p class="card-text-highlight lang-pt">Engajamento de Stakeholders</p>
+                      <p class="card-text-highlight lang-en d-none">Stakeholder Engagement</p>
+                    </div> 
+                    
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card p-4 shadow-sm h-100">
+                    <img src="imgs/pot26684.png" alt="" class="img-fluid keep-aspect">
+                    <div class="mt-auto">
+                      <!-- Footer or button -->
+                      <p class="card-text-highlight lang-pt">Planeamento e Ordenamento do Território</p>
+                      <p class="card-text-highlight lang-en d-none">Spatial Planning and Land Management</p>
+                    </div> 
+                    
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card p-4 shadow-sm h-100">
+                    <img src="imgs/fs42822.png" alt="" class="img-fluid keep-aspect">
+                    <div class="mt-auto">
+                      <!-- Footer or button -->
+                      <p class="card-text-highlight lang-pt">Financiamento Sustentável</p>
+                      <p class="card-text-highlight lang-en d-none">Sustainable Finance</p>
+                    </div> 
+                    
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Right stacked cards -->
-            <div class="col-12 col-lg-4">
-              <div class="card p-4 shadow mb-4 justify-content-center align-items-center">
-                <h5 class="card-title lang-pt">Vamos Trabalhar Juntos</h5>
-                <h5 class="card-title lang-en d-none">Let's Work Together</h5>
-                <p class="contact-me"><span class="lang-pt">Vamos Conversar &nbsp;</span><span class="lang-en d-none">Let's Talk&nbsp;</span><a href="#" class="arrow-link">
-                    <i class="bi bi-arrow-up-right"></i>
-                  </a></p>
-                 
+          </div>
+
+          <div class="card p-4 shadow">
+            <p class="card-text-body lang-pt">Como consultora ambiental, especializo-me em transformar desafios ambientais em soluções sustentáveis com impacto real. Acredito que o desenvolvimento responsável começa com diálogo aberto, respeito pelas comunidades e compromisso com o bem comum.</p>
+            <p class="card-text-body lang-en d-none">As an environmental consultant, I specialize in transforming environmental challenges into sustainable solutions with real impact. I believe that responsible development begins with open dialogue, respect for communities, and a commitment to the common good.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="container my-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="card py-2 shadow">
+              <div class="overflow-auto">
+                <div class="scrolling-wrapper" id="scrollContainer">
+                <div class="scrolling-content" id="scrollContent">
+                  <span class="skill lang-pt">Avaliação de Impacto Ambiental e Social (EIA/ESIA)</span>
+                  <span class="skill lang-en d-none">Environmental and Social Impact Assessment (EIA/ESIA)</span>
+                  <span><i class="bi bi-circle skill-circle"></i></span>
+                  <span class="skill skill-color lang-pt">Gestão de Projetos de Sustentabilidade</span>
+                  <span class="skill skill-color lang-en d-none">Sustainability Project Managemen</span>
+                  <span><i class="bi bi-circle skill-circle"></i></span>
+                  <span class="skill lang-pt">Planeamento e Ordenamento do Território</span>
+                  <span class="skill lang-en d-none">Territorial Planning and Land Use</span>
+                  <span><i class="bi bi-circle skill-circle"></i></span>
+                  <span class="skill skill-color lang-pt">Implementação de SGAS</span>
+                  <span class="skill skill-color lang-en d-none">ESMS Implementation</span>
+                  <span><i class="bi bi-circle skill-circle"></i></span>
+                  <span class="skill lang-pt">Engajamento de Stakeholders</span>
+                  <span class="skill lang-en d-none">Stakeholder Engagement</span>
+                  <span><i class="bi bi-circle skill-circle"></i></span>
+                  <span class="skill skill-color lang-pt">Análise de Risco Ambiental e Social</span>
+                  <span class="skill skill-color lang-en d-none">Environmental and Social Risk Analysis</span>
+                  <span><i class="bi bi-circle skill-circle"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row my-4">
+        <!-- Top row: 2 cards -->
+          <div class="col-12 col-md-6">
+            <div class="card p-4 shadow h-100">
+
+              <div class="d-flex custom-row">
+                <div class="custom-left">
+                  <h6 class="card-title lang-pt">Avaliação de Riscos em Direitos Humanos</h6>
+                  <h6 class="card-title lang-en d-none">Human Rights Risk Assessment</h6>
+                  <p class="card-text-body">XSML Capital</p>
+                </div>
+                <div class="custom-right">
+                <a href="#" class="btn btn-outline-secondary rounded-circle kpi-arrow arrow-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+              </div>
+              <img src="imgs/human.jpg" alt="" class="img-fluid uniform-image-big">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card p-4 shadow h-100">
+                <div class="d-flex custom-row">
+                <div class="custom-left">
+                  <h6 class="card-title lang-pt">Avaliação Ambiental e Social</h6>
+                  <h6 class="card-title lang-en d-none">Environmental and Social Impact Assessment </h6>
+                  <p class="card-text-body lang-pt">Terminal da Pumangol</p>
+                  <p class="card-text-body lang-en d-none">Pumangol Fuel Terminal</p>
+                </div>
+                <div class="custom-right">
+                <a href="#" class="btn btn-outline-secondary rounded-circle kpi-arrow arrow-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+              <img src="imgs/porto.jpg" alt="" class="img-fluid uniform-image-big">
+            </div>
+          </div>
+      </div>
+
+      <!-- Bottom row: 3 cards -->
+      <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card p-4 shadow h-100">
+              <div class="d-flex custom-row">
+                <div class="custom-left">
+              <h6 class="card-title lang-pt">Projeto FSSP</h6>
+              <h6 class="card-title lang-en d-none">PFisheries Sector Support Project (FSSP)</h6>
+              <p class="card-text-body lang-pt">Apoio ao Setor das Pescas</p>
+              <p class="card-text-body lang-en d-none">Support to the Fisheries Sector</p>
+              </div>
+                <div class="custom-right">
+                <a href="#" class="btn btn-outline-secondary rounded-circle kpi-arrow arrow-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+              </div>
+              <img src="imgs/pesca.jpg" alt="" class="img-fluid uniform-image-small">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card p-4 shadow h-100">
+              <div class="d-flex custom-row">
+                <div class="custom-left">
+              <h6 class="card-title lang-pt">Reducing Pollution Through Partnership</h6>
+              <h6 class="card-title lang-en d-none">Reducing Pollution Through Partnership</h6>
+              <p class="card-text-body">JNCC & Ecojango</p>
+              </div>
+              <div class="custom-right">
+                <a href="#" class="btn btn-outline-secondary rounded-circle kpi-arrow arrow-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+              </div>
+              <img src="imgs/partnership.jpg" alt="" class="img-fluid uniform-image-small">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card p-4 shadow h-100">
+            <div class="d-flex custom-row">
+              <div class="custom-left">
+                <h6 class="card-title lang-pt">Plano de Gestão Ambiental e Social</h6>
+                <h6 class="card-title lang-en d-none">Environmental and Social Management Plan</h6>
+                <p class="card-text-body lang-pt">Terminal da Pumangol</p>
+                <p class="card-text-body lng-en d-none">Pumangol Fuel Terminal</p>
+              </div>
+              <div class="custom-right">
+                <a href="#" class="btn btn-outline-secondary rounded-circle kpi-arrow arrow-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+              </div>
+              <img src="imgs/oil.jpg" alt="" class="img-fluid uniform-image-small">
+            </div>
+          </div>
+      </div>
+
+    </section>
+
+    <!-- KPI and contact section-->
+    <footer class="container my-5">
+      <div class="row g-4">
+
+        <!-- Left card -->
+        <div class="col-12 col-lg-8">
+          <div class="card h-100 py-2 pb-4">
+            <div class="overflow-hidden position-relative" style="width: 100%;">
+
+              <div class="d-flex flex-nowrap" id="kpi-list">
+              
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+
+                  <!-- C]ircle with centered value -->
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+20</span>
+                  </div>
+
+                  <!-- Text to the right -->
+                  <div>
+                    <span class="kpi-title lang-pt">Anos de experiência em projetos ambientais e sociais<br></span>
+                    <span class="kpi-title lang-en d-none">Years of experience in environmental and social projects<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Experiência acumulada em contextos nacionais e internacionais.</span><span class="lang-en d-none">&nbsp;Cumulative experience in national and international contexts.</span></span>
+                  </div>
+
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+30</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Projetos de impacto sustentável avaliados ou coordenados<br></span>
+                    <span class="kpi-title lang-en d-none">Sustainable impact projects evaluated or coordinated<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;avaliações de impacto, planos de gestão e consultorias estratégicas.</span><span class="lang-en d-none">&nbsp;Impact assessments, management plans, and strategic consultancies.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+10</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Instituições internacionais parceiras<br></span>
+                    <span class="kpi-title lang-en d-none">International partner institutions<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;FAO, Banco Mundial, AfDB, IFC, JNCC, entre outras.</span><span class="lang-en d-none">&nbsp;FAO, World Bank, AfDB, IFC, JNCC, among others.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+10</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Sectores económicos abrangidos<br></span>
+                    <span class="kpi-title lang-en d-none">Covered economic sectors<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Agricultura, indústria, energia, água, pescas, banca, mineração, entre outros.</span><span class="lang-en d-none">&nbsp;Agriculture, industry, energy, water, fisheries, banking, mining, among others.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+500</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Stakeholders envolvidos em processos participativos<br></span>
+                    <span class="kpi-title lang-en d-none">Stakeholders engaged in participatory processes<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Sessões, workshops, missões de campo e articulação institucional.</span><span class="lang-en d-none">&nbsp;Sessions, workshops, field missions, and institutional coordination.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+12</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Anos a trabalhar com normas e salvaguardas internacionais (IFC, AfDB, ONU)<br></span>
+                    <span class="kpi-title lang-en d-none">Years working with international standards and safeguards (IFC, AfDB, UN)<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Rigor técnico alinhado com standards globais.</span><span class="lang-en d-none">&nbsp;Technical rigor aligned with global standards.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+15</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Estudos de impacto ambiental e social (EIA/ESIA) liderados ou revistos<br></span>
+                    <span class="kpi-title lang-en d-none">Environmental and social impact assessments (EIA/ESIA) led or reviewed<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Desde infraestruturas a planos territoriais.</span><span class="lang-en d-none">&nbsp;From infrastructure to territorial plans.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+10</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Estratégias de sustentabilidade elaboradas ou implementadas<br></span>
+                    <span class="kpi-title lang-en d-none">Sustainability strategies developed or implemented<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Em instituições financeiras, setor público e projetos financiados.</span><span class="lang-en d-none">&nbsp;In financial institutions, public sector, and funded projects.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value"><i class="bi bi-arrow-up-right"></i>57%</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">De redução de custos operacionais em projetos de planeamento urbano<br></span>
+                    <span class="kpi-title lang-en d-none">Reduction in operational costs in urban planning projects<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Otimização de circuitos de resíduos urbanos em Portugal.</span><span class="lang-en d-none">&nbsp;Optimization of urban waste routes in Portugal.</span></span>
+                  </div>
+                </div>
+
+                <div class="kpi-item p-4 shadow-sm d-flex align-items-center gap-3">
+                  <div class="kpi-circle d-flex align-items-center justify-content-center">
+                    <span class="kpi-value">+5k</span>
+                  </div>
+                  <div>
+                    <span class="kpi-title lang-pt">Hectares de território analisado em planos ambientais<br></span>
+                    <span class="kpi-title lang-en d-none">Hectares of land analyzed in environmental plans<br></span>
+                    <span class="kpi-text"><i class="bi bi-pin-angle"></i><span class="lang-pt">&nbsp;Incluindo parques naturais, zonas costeiras e áreas urbanas.</span><span class="lang-en d-none">&nbsp;Including natural parks, coastal zones, and urban areas.</span></span>
+                  </div>
+                </div>
+
+                  
+              </div>
+            </div>
                 
-              </div>
-
-
-              <div class="card p-3 shadow d-flex align-items-center justify-content-center">
-                <ul class="list-unstyled d-flex gap-3 mb-0">
-                  <li>
-                    <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
-                      <i class="bi bi-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
-                      <i class="bi bi-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
-                      <i class="bi bi-twitter-x"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
+            <div class="px-4 mx-2 d-flex justify-content-start align-items-center gap-2 mt-3 pb-3">
+              <button class="btn btn-outline-secondary rounded-circle kpi-arrow" id="scroll-arrow-left">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="btn btn-outline-secondary rounded-circle kpi-arrow" id="scroll-arrow-right">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
 
           </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-    </body>
+        </div>
+
+        <!-- Right stacked cards -->
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 shadow mb-4 justify-content-center align-items-center">
+            <h5 class="card-title lang-pt">Vamos Trabalhar Juntos</h5>
+            <h5 class="card-title lang-en d-none">Let's Work Together</h5>
+            <p class="contact-me"><span class="lang-pt">Vamos Conversar &nbsp;</span><span class="lang-en d-none">Let's Talk</span><a href="#" class="arrow-small">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </p>
+          </div>
+
+
+          <div class="card p-3 shadow d-flex align-items-center justify-content-center">
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+              <li>
+                <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/seu-perfil" target="_blank" class="text-secondary fs-4 d-flex align-items-center">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+  
 </html>
